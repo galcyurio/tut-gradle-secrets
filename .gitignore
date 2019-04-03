@@ -6,3 +6,7 @@ build/
 ### Intellij ###
 .idea/
 out/
+
+### Secrets ###
+.secrets
+local.properties
