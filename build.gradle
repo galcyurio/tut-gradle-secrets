@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+apply from: 'gradle/sample.gradle'
+apply from: 'gradle/password-1-console.gradle'
+apply from: 'gradle/password-2-properties-file.gradle'
+apply from: 'gradle/password-3-env-variable.gradle'
+apply from: 'gradle/password-4-gui.gradle'
+
+group 'com.github.galcyurio'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task run(type: JavaExec) {
+    dependsOn build
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.github.galcyurio.Main"
+}
