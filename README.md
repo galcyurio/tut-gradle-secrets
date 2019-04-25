@@ -8,7 +8,7 @@
 콘솔을 통해 입력받는 방법은 일부 환경에서는 실행되지 않습니다.
 
 ### 2. 파일
-- 소스코드 -> [password-2-properties-file.gradle](./gradle/password-1-console.gradle)
+- 소스코드 -> [password-2-properties-file.gradle](./gradle/password-2-properties-file.gradle)
 
 파일을 통해서도 민감한 파일들을 입력받을 수 있습니다.
 이 경우에는 저장하는 것이기 때문에 항상 저장된 파일의 관리에 대해 주의를 기울여야 합니다.
